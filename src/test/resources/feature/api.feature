@@ -1,7 +1,10 @@
-Feature:
+Feature: API Validation
 
-  Scenario Outline:
-    Given Send "GET" Request
-    When Status Code is "200"
-    Then Validate "promotionId" is any String value
+  Scenario Outline: Validate PromoTypes
+    Given Send "<Request Type>" Request with "<ApiKey>"
+    When Status Code is "<Status Code>"
+    Then Validate PromoType is Should have be "<PromoType>"
     Examples:
+
+      | Request Type | ApiKey                        | Status Code | PromoType                   |
+      | GET          | webB2BGDMSTGExy0sVDlZMzNDdUyZ | 200         | EPISODE/MOVIE/SERIES/SEASON |
