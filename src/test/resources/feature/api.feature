@@ -1,10 +1,9 @@
-Feature: API Validation
+Feature: Promo Type Validation
 
-  Scenario Outline: Validate PromoTypes
-    Given Send "<Request Type>" Request with "<ApiKey>"
-    When Status Code is "<Status Code>"
+  Scenario Outline: Scenario is to Validate PromoTypes
+    Given Send "<Request Type>" Request and Retrieve Response
     Then Validate PromoType is Should have be "<PromoType>"
     Examples:
 
-      | Request Type | ApiKey                        | Status Code | PromoType                   |
-      | GETPROMOTION | webB2BGDMSTGExy0sVDlZMzNDdUyZ | 200         | EPISODE/MOVIE/SERIES/SEASON |
+      | Request Type | PromoType                   |
+      | GETPROMOTION | EPISODE/MOVIE/SERIES/SEASON |

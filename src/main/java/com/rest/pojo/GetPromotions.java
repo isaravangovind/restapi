@@ -3,7 +3,7 @@ package com.rest.pojo;
 
 import java.util.List;
 
-public class GetPromotions {
+public class    GetPromotions {
 
     private List<Promotion> promotions = null;
 
