@@ -7,4 +7,4 @@ Feature: API Validation
     Examples:
 
       | Request Type | ApiKey                        | Status Code | PromoType                   |
-      | GET          | webB2BGDMSTGExy0sVDlZMzNDdUyZ | 200         | EPISODE/MOVIE/SERIES/SEASON |
+      | GETPROMOTION | webB2BGDMSTGExy0sVDlZMzNDdUyZ | 200         | EPISODE/MOVIE/SERIES/SEASON |
