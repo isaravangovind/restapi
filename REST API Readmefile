@@ -1,0 +1,25 @@
+Git Repo : https://github.com/isaravangovind/restapi.git
+
+About Framework:
+
+The framework is designed in CUCUMBER Framework + JAVA 8 + MAVEN
+
+1. Request Spec Builder is used for building the spec
+2. POJO classes is implemeted
+	In case of defined / mandatory / Should exist fields are not available in response - test will automatically fail with corresponding error
+3. If the response itself null - test will stop and show the error message
+4. All logs will be logged in log4j logs --> restApi.log
+5. To Start test use mvn clean install / mvn clean test
+6. All reports are available in target
+7. This test contains 2 feature file
+		api.feature 
+			TC1 - Scenario is to Validate PromoTypes - will PASS as All Response promotype is given
+			TC2 - Scenario is to FAIL at PromoTypes Validation - will FAIL as only CHANNEL/EPISODE/MOVIE/SERIES/SEASON is present in the response
+		apikey.feature
+			TC1 - 	Scenario is to Validate Wrong APIKEY - will PASS
+
+
+
+Pre-req to run the test:
+1. Java 8
+2. apache Maven
